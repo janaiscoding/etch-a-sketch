@@ -8,11 +8,25 @@
     grid-template-rows: repeat(16,1fr);
   }
   
- /* .grid-element {
-  /*  user-select: none;
- // }
+ .grid-element {
+  user-select: none;
+ }
 
-.small-div {
-    background-color: pink;
-    
-}
+ .settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  

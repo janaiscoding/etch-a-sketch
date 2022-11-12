@@ -1,6 +1,6 @@
 // all variables
 const defaultColor = '#333333';
-const defaultSize = 16;
+const defaultSize = 32;
 const defaultMode = 'color';
 
 const sizeButton = document.querySelector(".size-input");

@@ -1,6 +1,4 @@
 * {
- /* background-color:rgb(216, 198, 198); */
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -35,15 +33,14 @@
   .body {
     display:flex;
     flex-direction: column;
-    min-height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
   }
   .footer {
-
-    padding: 0px 400px;
+    font-size: 18px;
+    padding: 40px;
     background-color:rgba(216, 198, 198, 0.328);
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    box-shadow: 8px 4px 4px 4px rgb(60 64 67 / 30%);
     text-align: center;
-    margin-top:auto;
   }
 
 button {

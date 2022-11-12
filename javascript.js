@@ -10,6 +10,7 @@ const clearButton = document.querySelector(".clear");
 const rainbowButton = document.querySelector(".rainbow");
 const grid = document.querySelector(".grid");
 
+
 let currentColor = defaultColor;
 let currentSize = defaultSize;
 let currentMode = defaultMode;
@@ -20,6 +21,7 @@ rainbowButton.onclick = () => setCurrentMode('rainbow');
 clearButton.onclick = () => clearSketchboard();
 sizeButton.onclick = () => getCurrentSize();
 colorButton.onclick = () => setCurrentMode('color');
+
 
 //on load event https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 window.onload = () => {

@@ -10,14 +10,14 @@
     align-items: center;
     padding: 30px 0px;
   }
-  .settings {
+.settings {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
     margin: 50px;
   }
 
- .header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,22 +25,35 @@
   background-color:rgba(216, 198, 198, 0.328);
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
  }
-  .title {
+.title {
     font-size: 24px;
      color: #233611;
      font-weight: bold;
   }
-  .body {
+
+.body {
     display:flex;
     flex-direction: column;
     font-family:Arial, Helvetica, sans-serif;
   }
-  .footer {
+
+.footer {
+    color: #233611;
+    display: flex;
+    justify-content: space-between;
     font-size: 18px;
-    padding: 40px;
+    padding: 40px 400px;
     background-color:rgba(216, 198, 198, 0.328);
     box-shadow: 8px 4px 4px 4px rgb(60 64 67 / 30%);
     text-align: center;
+  }
+.fa-github {
+    color: #233611;
+    font-size: 25px;
+  }
+.fa-github:hover {
+    cursor:pointer;
+    transform: scale(1.05); 
   }
 
 button {
@@ -54,6 +67,11 @@ button {
   padding: 2px 24px;
   width: auto;
   }
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);  
+}
 button.active {
   background-color: #95b37820;
 }
@@ -65,13 +83,20 @@ button.active {
     box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
   }
   
- .grid-element {
+.grid-element {
   user-select: none;
   }
 
-  ul {
+ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.05);  
+}

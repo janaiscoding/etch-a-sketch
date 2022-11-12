@@ -13,3 +13,10 @@ https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 - Made button and added onclick event in html 
 - we prompt for a new size, we clean the current grid and reuse the grid function with the new size
 - Added regex pattern for size limits and number only validation. 
+5. Extra rainbow & eraser
+- Made buttons for default color, rainbow and eraser
+- Made a function for styling purposes of "Activate button" which shows which mode is selected
+- On each button click, i call the setCurrentMode function and i attribute it one of each 3 options
+- In changecolor function, i will check which mode is selected, and i style the background of each value
+- On load it will show which mode is activated by default
+- For extra power, i'll make it draw just when mouse is also clicked, not just hovering

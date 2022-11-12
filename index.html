@@ -7,17 +7,21 @@
     <script src="javascript.js" defer></script>
   </head>
   <body>
-  <div class="nav-bar">
+  <header class="header">
   <div class="title">Jana's Etch-a-Sketch</div>
     <ul class="settings">
-      <li><button id="eraser" onclick="clearSketchboard()">Clear all</button></li>
-      <li><button id="user-input" onclick="getCurrentSize()">Change Size</button></li>  
-      <li><button id="rainbow-mode" onclick="getRainbow()">Rainbow</button></li>
+      <li><button class="size-input">Change Size</button></li>
+      <li><button class="color">Color</button></li>  
+      <li><button class="rainbow">Rainbow</button></li>
+      <li><button class="eraser">Eraser</button></li>
+      <li><button class="clear">Clear all</button></li>
     </ul>
-  </div>
-  <main class="main">
+  </header>
+  <main class="main"> 
     <div class="grid"></div>
   </main>   
-
+  <footer class="footer">
+    <div class="footer-title"> Copyright © Jana's Etch-a-Sketch 2022 </div>
+  </footer>
   </body>
 </html>

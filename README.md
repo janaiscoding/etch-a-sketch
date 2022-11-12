@@ -1,49 +1,48 @@
 # etch-a-sketch
-Project: Etch-A-Sketch from The Odin Project
+
 
 - [Jana's Etch-A-Sketch Version 0.2](https://janaiscoding.github.io/etch-a-sketch/)
 
- - PATCH NOTES
+<h1> PATCH NOTES </h1>
 
-- Version 0.1 
 
+<h3> Version 0.1 </h3>
 
 - Released the project! 
 - You can now select Canvas Size, Default Color mode, Rainbow Mode, Eraser. 
 
 
-- Version 0.2
+<h3>Version 0.2 </h3>
 
 - Added Color Picker Selection for more drawing possibilities!
 - Adjusted styling in the Header/Footer sections.
-- Fixed a regex validation bug when user canceled the Change Size prompt.
+- Fixed a regex validation bug when user canceled the Change Size prompt. 
 
-
-
-
-
-- PROJECT DETAILS AND STEPS
+</br>
+</br>
+</br>
+<h3> PROJECT DETAILS AND STEPS </h3>
 
 https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
-1.Created the repository 
+<h4> Created the repository </h4>
 
-2."Create a webpage with a 16x16 grid of square divs":
+<h4> "Create a webpage with a 16x16 grid of square divs" </h4>
 
 - I will be using loops for 16 x 16. 
 - Now it's time to play with CSS to arrange them rows by columns. 
 
-3. Set up a “hover” effect 
+<h4> Set up a “hover” effect </h4>
 
 - Added an event listener for hover in the creating elements, on hover it calls the color function.
 
-4. Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid.
+<h4> Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. </h4>
 
 - Made button and added onclick event in HTML. (Later moved in JS)
 - Prompt for a new size, then clean the current grid and reuse the grid function with the new size from input.
 - Add regex pattern for size limits and number only validation. 
 
-5. BONUS POINTS HEHE
+<h4> BONUS POINTS HEHE </h4>
 
 - Made buttons for each drawing mode.
 - Created Rainbow style.

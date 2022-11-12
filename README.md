@@ -6,13 +6,13 @@
 <h1> PATCH NOTES </h1>
 
 
-<h3> Version 0.1 </h3>
+<h3> Version 0.1 - 12/11/22.</h3>
 
-- Released the project! 
+- Released the first version of the project. Currently Desktop-only mode.
 - You can now select Canvas Size, Default Color mode, Rainbow Mode, Eraser. 
 
 
-<h3>Version 0.2 </h3>
+<h3>Version 0.2 - 12/11/22.</h3>
 
 - Added Color Picker Selection for more drawing possibilities!
 - Adjusted styling in the Header/Footer sections.

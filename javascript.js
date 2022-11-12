@@ -46,15 +46,16 @@ function createSketchboard(size){
 
 // on click event, changing size, validating regex, creating new board
 function getCurrentSize() {
-    let pattern = /^\d{2}$/
+    let pattern = /^[1-9][0-9]$/
     let currentSize = window.prompt("Select a new canvas size (10 - 99):");
-    grid.innerHTML = '';
+    
     if (currentSize.match(pattern)){
+        grid.innerHTML = '';
         createSketchboard(currentSize);
     }
     else {
-        alert("Only numbers from 10 to 99 allowed.");
-        createSketchboard(defaultSize);
+        alert("Must be a 2 digit number, from 10 to 99. Back to default canvas we go...");
+        clearSketchboard();
     }
 }
 

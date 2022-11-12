@@ -65,7 +65,6 @@
 
   /* footer side */
   .footer {
-    color: #233611;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +80,9 @@
   .fa-github:hover {
     cursor:pointer;
     transform: scale(1.05); 
+  }
+  .footer-title {
+    color: #233611;
   }
 
 
@@ -106,6 +108,7 @@
   cursor: pointer;
   transform: scale(1.05);  
   }
+
   button.active {
   background-color: #95b37820;
   }
@@ -125,8 +128,4 @@
 
   a {
   text-decoration: none;
-  }
-
-  a:hover {
-  transform: scale(1.05);  
   }

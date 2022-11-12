@@ -9,7 +9,7 @@ const eraserButton = document.querySelector(".eraser");
 const clearButton = document.querySelector(".clear");
 const rainbowButton = document.querySelector(".rainbow");
 const grid = document.querySelector(".grid");
-
+const colorPicker = document.querySelector(".color-picker");
 
 let currentColor = defaultColor;
 let currentSize = defaultSize;
@@ -21,6 +21,7 @@ rainbowButton.onclick = () => setCurrentMode('rainbow');
 clearButton.onclick = () => clearSketchboard();
 sizeButton.onclick = () => getCurrentSize();
 colorButton.onclick = () => setCurrentMode('color');
+colorPicker.onclick = () => setCurrentMode('picker');
 
 
 //on load event https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
@@ -87,6 +88,11 @@ function activateButton(newMode) {
         colorButton.classList.remove('active');
         rainbowButton.classList.remove('active');
     }
+    else if (newMode === 'picker') {
+        eraserButton.classList.remove('active');
+        colorButton.classList.remove('active');
+        rainbowButton.classList.remove('active');
+    }
 }
 // change color event on mouseover & mousedown
 let mouseDown = false; 
@@ -118,6 +124,9 @@ function changeColor(e){
         const randomB = Math.floor(Math.random() * 256)
         e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
     }  
+    else if (currentMode === 'picker') {
+        e.target.style.backgroundColor = colorPicker.value;
+    }
 }
     
 

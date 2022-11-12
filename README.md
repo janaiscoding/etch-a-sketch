@@ -1,7 +1,28 @@
 # etch-a-sketch
 Project: Etch-A-Sketch from The Odin Project
 
-- [Live Demo](https://janaiscoding.github.io/etch-a-sketch/)
+- [Jana's Etch-A-Sketch Version 0.2](https://janaiscoding.github.io/etch-a-sketch/)
+
+ - PATCH NOTES
+
+- Version 0.1 
+
+
+- Released the project! 
+- You can now select Canvas Size, Default Color mode, Rainbow Mode, Eraser. 
+
+
+- Version 0.2
+
+- Added Color Picker Selection for more drawing possibilities!
+- Adjusted styling in the Header/Footer sections.
+- Fixed a regex validation bug when user canceled the Change Size prompt.
+
+
+
+
+
+- PROJECT DETAILS AND STEPS
 
 https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
@@ -31,5 +52,6 @@ https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 - In changeColor function, I will check which mode is selected, and I style the background of each value.
 - On load it will show which mode is activated by default and create the default canvas.
 - For extra power, I'll make it draw just when mouse is clicked & hovering, not just hovering randomly.
-- Added color picker tool! 
+
+ 
 

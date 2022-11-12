@@ -2,6 +2,7 @@
   * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   }
 
 
@@ -19,10 +20,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 400px;
+  padding: 20px 300px;
   background-color:rgba(216, 198, 198, 0.328);
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-  max-height: 80px;
+  
   }
 
   .title {
@@ -33,9 +34,8 @@
 
   .settings {
     display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-    margin: 50px;
+    justify-content: space-evenly;
+    gap: 30px;
   }
 
 
@@ -68,8 +68,9 @@
     color: #233611;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    padding: 40px 400px;
+    align-items: center;
+    font-size: 16px;
+    padding: 20px 300px;
     background-color:rgba(216, 198, 198, 0.328);
   }
 

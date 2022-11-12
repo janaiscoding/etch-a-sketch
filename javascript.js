@@ -6,6 +6,10 @@ const grid = document.querySelector(".grid");
 let currentColor = defaultColor;
 let currentSize = defaultSize;
 
+//on load event https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+window.onload = createSketchboard(defaultSize); 
+
+
 // creating the og board
 function createSketchboard(size){
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -20,7 +24,7 @@ function createSketchboard(size){
     }
 }
 
-
+// on click event, changing size, validating regex, creating new board
 function getCurrentSize() {
     let pattern = /^\d{2}$/
     let currentSize = window.prompt("Please specify new size:");
@@ -34,16 +38,13 @@ function getCurrentSize() {
     }
 }
 
-
+// erase all button, I wanted to still keep the current size but it always sets to global default... :c
 function clearSketchboard() {
     grid.innerHTML = '';
-    if (grid.innerHTML === ''){
-        createSketchboard(defaultSize);
-    }
+    createSketchboard(defaultSize); 
 }
 
+// change color event on mouseover / mousedown
 function changeColor(e){
     e.target.style.backgroundColor = currentColor;
 }
-
-createSketchboard(defaultSize);

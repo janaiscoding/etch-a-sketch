@@ -46,7 +46,7 @@ function createSketchboard(size){
 // on click event, changing size, validating regex, creating new board
 function getCurrentSize() {
     let pattern = /^\d{2}$/
-    let currentSize = window.prompt("Please specify new size (10 - 99):");
+    let currentSize = window.prompt("Select a new canvas size (10 - 99):");
     grid.innerHTML = '';
     if (currentSize.match(pattern)){
         createSketchboard(currentSize);
@@ -117,8 +117,7 @@ function changeColor(e){
         const randomG = Math.floor(Math.random() * 256)
         const randomB = Math.floor(Math.random() * 256)
         e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
-    }
-    
+    }  
 }
     
 

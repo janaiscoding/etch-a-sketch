@@ -6,7 +6,6 @@ const grid = document.querySelector(".grid");
 let currentColor = defaultColor;
 let currentSize = defaultSize;
 
-
 // creating the og board
 function createSketchboard(size){
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -17,26 +16,22 @@ function createSketchboard(size){
     gridElement.addEventListener("mouseover", changeColor);
     gridElement.addEventListener("mousedown",changeColor);
     gridElement.className = "grid-element";
-    gridElement.innerText = "ONE";
     grid.appendChild(gridElement);
     }
 }
 
 
 function getCurrentSize() {
+    let pattern = /^\d{2}$/
     let currentSize = window.prompt("Please specify new size:");
     grid.innerHTML = '';
-    if (currentSize>50){
-        alert ("Its too much! Max 50!");
-        createSketchboard(defaultSize);
-    }
-    else if (currentSize === null) {
-        createSketchboard(defaultSize);
-    }
-    else {
+    if (currentSize.match(pattern)){
         createSketchboard(currentSize);
     }
-    console.log(currentSize);
+    else {
+        alert("Only numbers from 10 to 99 allowed.");
+        createSketchboard(defaultSize);
+    }
 }
 
 

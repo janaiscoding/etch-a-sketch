@@ -12,4 +12,4 @@ https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 4. Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid.
 - Made button and added onclick event in html 
 - we prompt for a new size, we clean the current grid and reuse the grid function with the new size
-
+- Added regex pattern for size limits and number only validation. 

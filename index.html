@@ -7,15 +7,17 @@
     <script src="javascript.js" defer></script>
   </head>
   <body>
-<main class="main">
-    <div class="settings">
-      <button id="eraser" onclick="clearSketchboard()">Clear all</button>
-      <button id="user-input" onclick="getCurrentSize()">Change Size</button>
-      <button id="rainbow-mode" onclick="getRainbow()">Rainbow</button>
-    </div>
-    
+  <div class="nav-bar">
+  <div class="title">Jana's Etch-a-Sketch</div>
+    <ul class="settings">
+      <li><button id="eraser" onclick="clearSketchboard()">Clear all</button></li>
+      <li><button id="user-input" onclick="getCurrentSize()">Change Size</button></li>  
+      <li><button id="rainbow-mode" onclick="getRainbow()">Rainbow</button></li>
+    </ul>
+  </div>
+  <main class="main">
     <div class="grid"></div>
-    
-</main>
+  </main>   
+
   </body>
 </html>

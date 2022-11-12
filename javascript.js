@@ -1,10 +1,10 @@
 // all variables
 const defaultColor = '#333333';
 const defaultSize = 32;
-const defaultMode = 'color';
+const defaultMode = 'default';
 
 const sizeButton = document.querySelector(".size-input");
-const colorButton = document.querySelector(".color");
+const defaultButton = document.querySelector(".default-color");
 const eraserButton = document.querySelector(".eraser");
 const clearButton = document.querySelector(".clear");
 const rainbowButton = document.querySelector(".rainbow");
@@ -20,7 +20,7 @@ eraserButton.onclick = () => setCurrentMode('eraser');
 rainbowButton.onclick = () => setCurrentMode('rainbow');
 clearButton.onclick = () => clearSketchboard();
 sizeButton.onclick = () => getCurrentSize();
-colorButton.onclick = () => setCurrentMode('color');
+defaultButton.onclick = () => setCurrentMode('default');
 colorPicker.onclick = () => setCurrentMode('picker');
 
 
@@ -75,22 +75,22 @@ function activateButton(newMode) {
     
      if (newMode === 'rainbow') {
         rainbowButton.classList.add('active');
-        colorButton.classList.remove('active');
+        defaultButton.classList.remove('active');
         eraserButton.classList.remove('active');
     } 
-    else if (newMode === 'color') {
-        colorButton.classList.add('active');
+    else if (newMode === 'default') {
+        defaultButton.classList.add('active');
         rainbowButton.classList.remove('active');
         eraserButton.classList.remove('active');
     }
     else if (newMode === 'eraser') {
         eraserButton.classList.add('active');
-        colorButton.classList.remove('active');
+        defaultButton.classList.remove('active');
         rainbowButton.classList.remove('active');
     }
     else if (newMode === 'picker') {
         eraserButton.classList.remove('active');
-        colorButton.classList.remove('active');
+        defaultButton.classList.remove('active');
         rainbowButton.classList.remove('active');
     }
 }
@@ -112,7 +112,7 @@ document.body.addEventListener("mouseup", setMouseUp);
 // here we check which mode is active and assign the right color
 function changeColor(e){
     if (e.type === 'mouseover' && !mouseDown) return  
-    if (currentMode === 'color') {
+    if (currentMode === 'default') {
     e.target.style.backgroundColor = defaultColor;
     }
     else if (currentMode === 'eraser') {

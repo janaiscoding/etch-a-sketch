@@ -1,62 +1,89 @@
-* {
+  /* fix browser borders*/
+  * {
   margin: 0;
   padding: 0;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0px;
-  }
-.settings {
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-    margin: 50px;
   }
 
-.header {
+
+  /* global content */
+  .body {
+  display:flex;
+  flex-direction: column;
+  font-family:Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  }
+
+
+  /* header side */
+  .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 400px;
   background-color:rgba(216, 198, 198, 0.328);
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
- }
-.title {
+  }
+
+  .title {
     font-size: 24px;
      color: #233611;
      font-weight: bold;
   }
 
-.body {
-    display:flex;
-    flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif;
+  .settings {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin: 50px;
   }
 
-.footer {
+
+  /* main content  */
+  .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  flex: 1;
+  }
+
+  .grid {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  background-color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
+  }
+
+  .grid-element {
+  user-select: none;
+  }
+
+
+  /* footer side */
+  .footer {
     color: #233611;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     padding: 40px 400px;
     background-color:rgba(216, 198, 198, 0.328);
-    box-shadow: 8px 4px 4px 4px rgb(60 64 67 / 30%);
     text-align: center;
   }
-.fa-github {
+
+  .fa-github {
     color: #233611;
     font-size: 25px;
   }
-.fa-github:hover {
+  .fa-github:hover {
     cursor:pointer;
     transform: scale(1.05); 
   }
 
-button {
+
+  /* global effects */
+  button {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
   font-size: 14px;
@@ -68,35 +95,25 @@ button {
   width: auto;
   }
 
-button:hover {
+  button:hover {
   cursor: pointer;
   transform: scale(1.05);  
-}
-button.active {
-  background-color: #95b37820;
-}
-.grid {
-    display: grid;
-    width: 600px;
-    height: 600px;
-    background-color: #fefefe;
-    box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
   }
-  
-.grid-element {
-  user-select: none;
+  button.active {
+  background-color: #95b37820;
   }
 
-ul {
+  ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
 
-a {
+  a {
   text-decoration: none;
-}
-a:hover {
+  }
+  
+  a:hover {
   transform: scale(1.05);  
-}
+  }

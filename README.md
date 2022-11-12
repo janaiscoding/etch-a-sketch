@@ -18,6 +18,11 @@
 - Adjusted styling in the Header/Footer sections.
 - Fixed a regex validation bug when user canceled the Change Size prompt. 
 
+<h3>Future plans</h3>
+
+- Change size using a slider instead of prompt.
+
+
 </br>
 </br>
 </br>

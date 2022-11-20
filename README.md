@@ -18,9 +18,10 @@
 - Adjusted styling in the Header/Footer sections.
 - Fixed a regex validation bug when user canceled the Change Size prompt. 
 
-<h3>Future plans</h3>
+<h3>Version 0.3 - 20/11/22</h3>
 
-- Change size using a slider instead of prompt.
+- Added the size slider as an option, along with the alert popup. (which can be fully removed soon) 
+- Updated margins for more space around the canvas.
 
 
 </br>

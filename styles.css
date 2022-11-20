@@ -23,7 +23,7 @@
   padding: 20px 300px;
   background-color:rgba(216, 198, 198, 0.328);
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-  
+  margin-bottom: 20px;
   }
 
   .title {
@@ -52,8 +52,8 @@
 
   .grid {
   display: grid;
-  width: 650px;
-  height: 650px;
+  width: 550px;
+  height: 550px;
   background-color: #fefefe;
   box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 8px;
   }
@@ -61,7 +61,13 @@
   .grid-element {
   user-select: none;
   }
-
+  form {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #sizeValue {
+    text-align: center;
+  }
 
   /* footer side */
   .footer {

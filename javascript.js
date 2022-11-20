@@ -131,3 +131,28 @@ function changeColor(e){
 }
     
 
+//adding slider 
+const sizeValue = document.getElementById('sizeValue')
+const sizeSlider = document.getElementById('sizeSlider')
+
+sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value)
+sizeSlider.onchange = (e) => changeSize(e.target.value)
+
+function updateSizeValue(value) {
+    sizeValue.innerHTML = `${value} x ${value}`
+  }
+
+  function changeSize(value) {
+    setCurrentSize(value)
+    updateSizeValue(value)
+    reloadGrid()
+  }
+
+  function reloadGrid() {
+    clearSketchboard();
+    createSketchboard(currentSize);
+  }
+
+  function setCurrentSize(newSize) {
+    currentSize = newSize;
+  }

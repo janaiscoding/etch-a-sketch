@@ -1,4 +1,4 @@
-<h1> Jana's Etch-A-Sketch Version 0.3 </h1>
+<h1>Etch-A-Sketch Version 0.3 </h1>
 
 - Live preview [here](https://janaiscoding.github.io/etch-a-sketch/)
 
